@@ -30,7 +30,7 @@ jobs:
           install-command: npm ci
 
       - name: generate report
-        run: npm run test
+        run: npm run cy:run
       - name: upload report
         uses: actions/upload-artifact@v2
         with:
